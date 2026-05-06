@@ -96,7 +96,7 @@ sudo make install
 
 ### Step 3 — Backup the binaries
 
-Both are GPL licensed — you can copy and redistribute freely. Back them up in case the repo goes down:
+Both are GPL licensed — you can copy and redistribute freely. Back them up in case the repo goes down (or you can just get the [mcpelauncher-backup.zip](mcpelauncher-backup.zip) file from this repo when needed!:
 
 ```sh
 mkdir mcpelauncher-backup
@@ -124,7 +124,7 @@ To install a different version, repeat Step 5 with a different APK and version f
 `mcpelauncher-client` only works with x86_64 APKs. Such APKs are very hard to find. Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). But I couldn't find any reliable way to get x86_64 APK for the legal version of MCPE. If you manage to do so, that should still work.
 
 ### Restoring from backup
-If the repo goes down and you need to restore the binaries you backed up:
+If the repo goes down and you need to restore the binaries you backed up (extract to the `mcpelauncher-backup` first if you downloaded [mcpelauncher-backup.zip](mcpelauncher-backup.zip) from this repo and then do the following steps):
 ```bash
 cp ~/mcpelauncher-backup/mcpelauncher-extract /usr/local/bin/
 cp ~/mcpelauncher-backup/mcpelauncher-client /usr/bin/
