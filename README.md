@@ -99,6 +99,7 @@ sudo make install
 Both are GPL licensed — you can copy and redistribute freely. Back them up in case the repo goes down:
 
 ```sh
+mkdir mcpelauncher-backup
 cp /usr/bin/mcpelauncher-client ~/mcpelauncher-backup/
 cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-backup/
 ```
