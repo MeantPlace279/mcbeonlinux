@@ -110,6 +110,8 @@ Download the **x86_64** APK from [mcpelife.com](https://mcpelife.com). Make sure
 
 ### Step 5 — Extract and play
 
+#### Make sure to replace `{VERSION}` with the appropriate version identifier, eg, 1.26.1.1 (though it could be anything because its just a folder name)
+
 ```sh
 # extract (once per version)
 mcpelauncher-extract ~/Downloads/minecraft-x86_64.apk ~/.local/share/mcpelauncher/versions/{VESRION}
