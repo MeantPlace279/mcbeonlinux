@@ -203,6 +203,6 @@ Ran a full Android environment and played Minecraft like on a phone. Stopped wor
 
 ### CCMC Launcher by Crow_Rei34
 
-Worked similarly to Trinity — extracted and ran custom APKs. Repository has since been deleted or privated. Believed to have been discontinued when Trinity was introduced, as both share a developer (JavierC).
+Worked similarly to Trinity, extracted and ran custom APKs. Repository has since been deleted or privated. Believed to have been discontinued when Trinity was introduced, as both share a developer (JavierC).
 
 Historical tutorials (Portugese): [1](https://youtu.be/4K1X8PafWf0?si=jZe4X5xsA9nplT5h) | [2](https://youtu.be/VfVwqMcKhy0?si=_C70rhEyabASEKgb) | [3](https://youtu.be/sYvpEpwin6k?si=sD631OfATfYwzbH1)
