@@ -110,17 +110,18 @@ Download the **x86_64** APK from [mcpelife.com](https://mcpelife.com). Make sure
 
 ### Step 5 — Extract and play
 
-#### Make sure to replace `{VERSION}` with the appropriate version identifier, eg, 1.26.1.1 (though it could be anything because its just a folder name)
+#### Make sure to replace `{VERSION}` with the appropriate version identifier, eg, 1.26.1.1 (though it could be anything because its just a folder name) and `{APK}` with the appropriate apk file name in the directory.
 
 ```sh
 # extract (once per version)
-mcpelauncher-extract ~/Downloads/minecraft-x86_64.apk ~/.local/share/mcpelauncher/versions/{VESRION}
+mcpelauncher-extract ~/Downloads/{APK} ~/.local/share/mcpelauncher/versions/{VESRION}
 
 # play
 mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/{VERSION}
 ```
 
-To install a different version, repeat Step 5 with a different APK and version folder name.
+### Adding a new version
+To add a new version, simply repeat Step 5 with a different APK and version folder name.
 
 ### NOTE
 `mcpelauncher-client` only works with x86_64 APKs. Such APKs are very hard to find. Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). But I couldn't find any reliable way to get x86_64 APK for the legal version of MCPE. If you manage to do so, that should still work.
