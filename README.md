@@ -108,26 +108,71 @@ cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-backup/
 
 Download the **x86_64** APK from [mcpelife.com](https://mcpelife.com). Make sure it's x86_64, not ARM.
 
-### Step 5 — Extract and play
+### Step 5 — Extract
 
-#### Make sure to replace `{VERSION}` with the appropriate version identifier, eg, 1.26.1.1 (though it could be anything because its just a folder name) and `{APK}` with the appropriate apk file name in the directory.
+You need to extract the apk in order to run it.
 
+#### The syntax of the extract command is:
+`mcpelauncher-extract {PATH_TO_APK} {STORE_PATH}`
+
+- `{PATH_TO_APK}` - Where the x86_64 apk is, example `~/Downloads/minecraft.apk`
+- `{STORE_PATH}` - Where the extracted apk will reside, the path will be needed to run the version.
+
+Extract example:
 ```sh
-# extract (once per version)
-mcpelauncher-extract ~/Downloads/{APK} ~/.local/share/mcpelauncher/versions/{VESRION}
+mcpelauncher-extract ~/Downloads/minecraft.apk ~/Downloads/mcpelauncher_versions/1.21.0
+```
 
-# play
-mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/{VERSION}
+> [!TIP]
+> You can use the `~/.local/share/mcpelauncher` directory to store the versions as well. It is a folder that is generated when you install `mcpelauncher-manifest`, so you could extract thr version here to keep everything organized at one place.
+
+### Step 6 - Launch
+
+Finally, this is how you launch the extracted apk.
+
+#### The syntax of the launch command is:
+`mcpelauncher-client -dg {STORE_PATH}`
+
+- `{STORE_PATH}` - Where the apk you extracted in step 5 is.
+
+Launch example
+```
+mcpelauncher-client -dg ~/Downloads/mcpelauncher_versions/1.21.0
 ```
 
 ### Adding a new version
 To add a new version, simply repeat Step 5 with a different APK and version folder name.
 
+### Adding mods, packs etc.
+To add resource packs or other mods, you need to go inside the `~/.local/share/mcpelauncher` folder. This folder is auto-generated when you do step 1. You can think of this folder as the configuration of `mcpelauncher-client`. 
+
+### Launches file explorer GUI
+```sh
+cd ~/.local/share/mcpelauncher/games/com.mojang/
+xdg-open .
+```
+This is where you'd add your packs and mods. For resource packs, you need to drag the `.mcpack` file inside of `.local/share/mcpelauncher/games/com.mojang/resource_packs`.
+
+Similarly, inside of `.local/share/mcpelauncher/games/com.mojang/` you can add stuff like behaviour packs, worlds etc. in their respective folders.
+
+> [!NOTE]
+> Modifying stuff inside `.local/share/mcpelauncher/` affects all instances (or versions) globally which is run through `mcpelauncher-client`.
+
 ### NOTE
-`mcpelauncher-client` only works with x86_64 APKs. Such APKs are very hard to find. Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). But I couldn't find any reliable way to get x86_64 APK for the legal version of MCPE. If you manage to do so, that should still work.
+`mcpelauncher-client` only works with x86_64 APKs. Here's how you obtain them:
+
+- Cracked APKs
+Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). I suppose there may be more sites, but this is one of them.
+
+- Official APKs (legal)
+1. Emulator
+This method is currently untested, but it seems to me one could obtain an `x86_64` version of the MCPE apk through an `x86_64` emulator. For instance, an x86_64 emulator in Android Studio can be made and potentially Google Play will provide the `x86_64` version. But again, this is untested.
+
+2. Google Play API
+The creator of `mcpelauncher` and some members in their discord server mention the use of some Google Play API that they use to obtain the `x86_64` apk. They also claim the method for obtaining the APK is similar to that of Aurora Store. I have no idea how this works but I'm still putting it.
 
 ### Restoring from backup
-If the repo goes down and you need to restore the binaries you backed up (extract to the `mcpelauncher-backup` first if you downloaded [mcpelauncher-backup.zip](mcpelauncher-backup.zip) from this repo and then do the following steps):
+If the repo goes down and you need to restore the binaries you backey,d up (extract to the `mcpelauncher-backup` first if you downloaded [mcpelauncher-backup.zip](mcpelauncher-backup.zip) from this repo and then do the following steps):
 ```bash
 cp ~/mcpelauncher-backup/mcpelauncher-extract /usr/local/bin/
 cp ~/mcpelauncher-backup/mcpelauncher-client /usr/bin/
