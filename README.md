@@ -184,17 +184,14 @@ mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/{VERSION}
 Minecraft Bedrock has shifted from UWP to GDK on Windows. This method runs the actual PC GDK version on Linux using ProtonGDK and some proxy workarounds.
 
 - Runs the actual Windows PC version, not Android
-- Lengthy setup — not recommended unless other methods fail
-- No specific repo — combination of multiple tools and workarounds
+- Lengthy setup, not recommended unless other methods fail
 
 [Video Tutorial](https://youtu.be/m76O2cRIEnM?si=YV2dxJpvLTYKtIDh)
 [Text Tutorial](https://github.com/inbob1/mcbe-on-linux)
 
----
-
 ## Method 7: Windows VM
 
-Run Windows in a virtual machine and play Minecraft Bedrock normally inside it. Last resort — works but has overhead and requires a Windows license.
+Run Windows in a virtual machine and play Minecraft Bedrock normally inside it. Last resort, works but has overhead.
 
 ---
 
