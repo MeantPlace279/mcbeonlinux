@@ -151,14 +151,14 @@ Similarly, inside of `.local/share/mcpelauncher/games/com.mojang/` you can add s
 ### NOTE
 `mcpelauncher-client` only works with x86_64 APKs. Here's how you obtain them:
 
-- Cracked APKs
-Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). I suppose there may be more sites, but this is one of them.
+##### Cracked APKs
+- Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). I suppose there may be more sites, but this is one of them.
 
-- Official APKs (legal)
-1. Emulator
+#### Official APKs (legal)
+- Emulator
 This method is currently untested, but it seems to me one could obtain an `x86_64` version of the MCPE apk through an `x86_64` emulator. For instance, an x86_64 emulator in [Android Studio](https://developer.android.com/studio) can be made and potentially Google Play will provide the `x86_64` version. But again, this is untested.
 
-2. Google Play API
+- Google Play API
 The creator of `mcpelauncher` and some members in their discord server mention the use of some Google Play API that they use to obtain the `x86_64` apk. They also claim the method for obtaining the APK is similar to that of [Aurora Store](https://auroraoss.com/). I have no idea how this works but I'm still putting it.
 
 ### Restoring from backup
