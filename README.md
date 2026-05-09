@@ -116,7 +116,7 @@ You need to extract the apk in order to run it.
 `mcpelauncher-extract {PATH_TO_APK} {STORE_PATH}`
 
 - `{PATH_TO_APK}` - Where the x86_64 apk is, example `~/Downloads/minecraft.apk`
-- `{STORE_PATH}` - Where the extracted apk will reside, the path will be needed to run the version.
+- `{STORE_PATH}` - Where the extracted apk will reside, the path will be needed to launch the version.
 
 Extract example:
 ```sh
@@ -166,10 +166,10 @@ Cracked x86_64 APKs are available at [mcpelife.com](https://mcpelife.com). I sup
 
 - Official APKs (legal)
 1. Emulator
-This method is currently untested, but it seems to me one could obtain an `x86_64` version of the MCPE apk through an `x86_64` emulator. For instance, an x86_64 emulator in Android Studio can be made and potentially Google Play will provide the `x86_64` version. But again, this is untested.
+This method is currently untested, but it seems to me one could obtain an `x86_64` version of the MCPE apk through an `x86_64` emulator. For instance, an x86_64 emulator in [Android Studio](https://developer.android.com/studio) can be made and potentially Google Play will provide the `x86_64` version. But again, this is untested.
 
 2. Google Play API
-The creator of `mcpelauncher` and some members in their discord server mention the use of some Google Play API that they use to obtain the `x86_64` apk. They also claim the method for obtaining the APK is similar to that of Aurora Store. I have no idea how this works but I'm still putting it.
+The creator of `mcpelauncher` and some members in their discord server mention the use of some Google Play API that they use to obtain the `x86_64` apk. They also claim the method for obtaining the APK is similar to that of [Aurora Store](https://auroraoss.com/). I have no idea how this works but I'm still putting it.
 
 ### Restoring from backup
 If the repo goes down and you need to restore the binaries you backey,d up (extract to the `mcpelauncher-backup` first if you downloaded [mcpelauncher-backup.zip](mcpelauncher-backup.zip) from this repo and then do the following steps):
@@ -196,7 +196,7 @@ Minecraft Bedrock has shifted from UWP to GDK on Windows. This method runs the a
 - No specific repo — combination of multiple tools and workarounds
 
 [Video Tutorial](https://youtu.be/m76O2cRIEnM?si=YV2dxJpvLTYKtIDh)
-[Textual Tutorial](https://github.com/inbob1/mcbe-on-linux)
+[Text Tutorial](https://github.com/inbob1/mcbe-on-linux)
 
 ---
 
