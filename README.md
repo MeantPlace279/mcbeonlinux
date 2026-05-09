@@ -199,7 +199,7 @@ Run Windows in a virtual machine and play Minecraft Bedrock normally inside it. 
 
 ### Waydroid
 
-Ran a full Android environment and played Minecraft like on a phone. Stopped working in newer versions — game gets stuck at the loading screen.
+Ran a full Android environment and played Minecraft like on a phone. Stopped working in newer versions, game gets stuck at the loading screen.
 
 ### CCMC Launcher by Crow_Rei34
 
