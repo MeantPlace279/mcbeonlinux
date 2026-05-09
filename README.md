@@ -10,7 +10,7 @@ A complete guide to every known method.
 
 The original. Has been the go-to for years. Requires owning Minecraft on Google Play — downloads the APK automatically through your account.
 
-⚠ The maintainer (ChristopherHX) [stated on the official Discord](https://discord.com/channels/429580677617418240/429580677617418243/1475181891043725404):
+⚠ The maintainer (ChristopherHX) [stated on the official Discord](https://discord.com/channels/429580677617418240/429580677617418243/1475181891043725404) at `22 Feb 2026`:
 > *"Yes we are sitting on top a cave full of tnt, you have no long term update warranties. Update delays / stops could happen at any point of time, since the DRM has been enabled."*
 
 - Legal: Yes, uses your own purchased copy
