@@ -114,7 +114,7 @@ mcpelauncher-extract ~/Downloads/minecraft.apk ~/Downloads/mcpelauncher_versions
 ```
 
 > [!TIP]
-> You can use the `~/.local/share/mcpelauncher` directory to store the versions as well. It is a folder that is generated when you install `mcpelauncher-manifest`, so you could extract thr version here to keep everything organized at one place.
+> You can use the `~/.local/share/mcpelauncher` directory to store the versions as well. It is a folder that is generated when you install `mcpelauncher-manifest`, so you could extract the version here to keep everything organized at one place.
 
 ### Step 6: Launch
 
