@@ -34,7 +34,7 @@ Well-maintained and formal. Has its own mod/texture pack management on top of th
 
 ## Method 3: Cianova Launcher
 
-Made by a user in the Trinity Launcher Discord. Python-based GUI using customtkinter.
+Made by the *Las Tortuguitas de Ezku* community. Python-based GUI using customtkinter.
 
 - Uses `mcpelauncher-client` and `mcpelauncher-extract`
 - Runs custom APKs
