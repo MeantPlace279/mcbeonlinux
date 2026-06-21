@@ -114,20 +114,25 @@ mcpelauncher-extract ~/Downloads/minecraft.apk ~/Downloads/mcpelauncher_versions
 ```
 
 > [!TIP]
-> You can use the `~/.local/share/mcpelauncher` directory to store the versions as well. It is a folder that is generated when you install `mcpelauncher-manifest`, so you could extract the version here to keep everything organized at one place.
+> You can use the `~/.local/share/mcpelauncher` directory to store the versions as well. It is a folder that is generated when you install `mcpelauncher-manifest`, so you could extract the version here (or inside a sub-folder like `~/.local/share/mcpelaucnher/versions`) to keep everything organized at one place.
+> Eg. `mcpelauncher-extract ~/Downloads/minecraft.apk ~/.local/share/mcpelaucnher/versions/1.21.0`
 
 ### Step 6: Launch
 
 Finally, this is how you launch the extracted apk.
 
 #### The syntax of the launch command is:
-`mcpelauncher-client -dg {STORE_PATH}`
+`mcpelauncher-client -dg {STORED_PATH}`
 
-- `{STORE_PATH}` - Where the apk you extracted in step 5 is.
+- `{STORED_PATH}` - Where the apk you extracted in step 5 is.
 
-Launch example
+Launch example:
 ```
 mcpelauncher-client -dg ~/Downloads/mcpelauncher_versions/1.21.0
+```
+or depending on your stored path:
+```
+mceplauncher-client -dg ~/.local/share/mcpelaucnher/versions/1.21.0
 ```
 
 ### Adding a new version
