@@ -132,7 +132,7 @@ mcpelauncher-client -dg ~/Downloads/mcpelauncher_versions/1.21.0
 ```
 or depending on your stored path:
 ```
-mceplauncher-client -dg ~/.local/share/mcpelaucnher/versions/1.21.0
+mcpelauncher-client -dg ~/.local/share/mcpelaucnher/versions/1.21.0
 ```
 
 ### Adding a new version
