@@ -87,21 +87,11 @@ make -j$(nproc)
 sudo make install
 ```
 
-### Step 3: Backup the binaries
-
-Both are GPL licensed — you can copy and redistribute freely. Back them up in case the repo goes down (or you can just get the [mcpelauncher-backup.zip](mcpelauncher-backup.zip) file from this repo when needed!:
-
-```sh
-mkdir mcpelauncher-backup
-cp /usr/bin/mcpelauncher-client ~/mcpelauncher-backup/
-cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-backup/
-```
-
-### Step 4: Get a Minecraft APK
+### Step 3: Get a Minecraft APK
 
 Download the **x86_64** APK from [mcpelife.com](https://mcpelife.com). Make sure it's x86_64, not ARM.
 
-### Step 5: Extract
+### Step 4: Extract
 
 You need to extract the apk in order to run it.
 
@@ -120,7 +110,7 @@ mcpelauncher-extract ~/Downloads/minecraft.apk ~/Downloads/mcpelauncher_versions
 > You can use the `~/.local/share/mcpelauncher` directory to store the versions as well. It is a folder that is generated when you install `mcpelauncher-manifest`, so you could extract the version here (or inside a sub-folder like `~/.local/share/mcpelaucnher/versions`) to keep everything organized at one place. \
 > Eg. `mcpelauncher-extract ~/Downloads/minecraft.apk ~/.local/share/mcpelauncher/versions/1.21.0`
 
-### Step 6: Launch
+### Step 5: Launch
 
 Finally, this is how you launch the extracted apk.
 
@@ -171,8 +161,21 @@ This method is currently untested, but it seems to me one could obtain an `x86_6
 
 The creator of `mcpelauncher` and some members in their discord server mention the use of some Google Play API that they use to obtain the `x86_64` apk. They also claim the method for obtaining the APK is similar to that of [Aurora Store](https://auroraoss.com/). I have no idea how this works but I'm still putting it.
 
+### Backing up the binaries locally.
+You can backup the binaries in case the repo goes down. So you have a local copy.
+```sh
+mkdir mcpelauncher-backup
+cp /usr/bin/mcpelauncher-client ~/mcpelauncher-backup/
+cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-backup/
+```
+
+>[!NOTE]
+>A [backup of the bianries]() is also available in this repo. Feel free to download them when needed.
+
+
 ### Restoring from backup
-If the repo goes down and you need to restore the binaries you backey,d up (extract to the `mcpelauncher-backup` first if you downloaded [mcpelauncher-backup.zip](mcpelauncher-backup.zip) from this repo and then do the following steps):
+If the repo goes down and you need to restore the binaries you backed up, create a folder named `mcpelauncher-backup` having your backed up binaries inside and run the following:
+
 ```bash
 cp ~/mcpelauncher-backup/mcpelauncher-extract /usr/local/bin/
 cp ~/mcpelauncher-backup/mcpelauncher-client /usr/bin/
