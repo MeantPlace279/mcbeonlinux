@@ -12,7 +12,7 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 The original launcher and the foundation of nearly every Android-based Bedrock launcher on Linux. It requires owning Minecraft through Google Play and automatically downloads the APK using your Google account.
 
 > [!WARNING]
-> ChristopherHX (maintainer of mcpelauncher) stated on the official Discord on **22 February 2026**:
+> ChristopherHX (maintainer of mcpelauncher) [stated](https://discord.com/channels/429580677617418240/429580677617418243/1475181891043725404) on the [official Discord](https://discord.gg/UkXJMCcxhr) on **22 February 2026**:
 >
 > > "Yes we are sitting on top a cave full of tnt, you have no long term update warranties. Update delays / stops could happen at any point of time, since the DRM has been enabled."
 
