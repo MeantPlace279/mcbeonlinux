@@ -22,6 +22,9 @@ The original. Has been the go-to for years. Requires owning Minecraft on Google 
 
 ## Method 2: Trinity Launcher
 
+>[!WARNING]
+> The highest supported version on x86_64 devices is 1.26.31
+
 Well-maintained and formal. Has its own mod/texture pack management on top of the standard mcpelauncher utilities.
 
 - Uses `mcpelauncher-client` and `mcpelauncher-extract`
