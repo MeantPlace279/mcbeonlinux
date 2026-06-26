@@ -170,7 +170,7 @@ cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-backup/
 ```
 
 >[!NOTE]
->A [backup of the bianries]() is also available in this repo. Feel free to download them when needed.
+>A [backup of the bianries](https://github.com/MeantPlace279/mcbeonlinux/blob/main/mcpelauncher-backup.zip) is also available in this repo. Feel free to download them when needed.
 
 
 ### Restoring from backup
