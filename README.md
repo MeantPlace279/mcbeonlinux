@@ -328,7 +328,40 @@ mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/{VERSION}
 
 ---
 
-# Method 6: GDK Version via ProtonGDK
+# Method 6: BedrockOnLinux
+
+A launcher that runs the **Windows version of Minecraft Bedrock Edition directly on Linux** using your own Microsoft account and licence.
+
+Unlike Methods 1–5, this does **not** use the Android version of Minecraft or `mcpelauncher-client`.
+
+### Features
+
+- Runs the Windows version of Minecraft Bedrock.
+- Real Microsoft/Xbox sign-in.
+- Friends, public servers and Realms.
+- Marketplace support.
+- Supports Minecraft Preview.
+- Supports older Minecraft versions.
+- Controller support.
+- Steam Deck support.
+- Available as AppImage, `.deb`, `.rpm`, Flatpak and Nix.
+
+### Requirements
+
+- 64-bit Linux.
+- A Vulkan-capable GPU and working drivers.
+- A Microsoft account that owns Minecraft.
+- A few GB of free disk space.
+
+### Resources
+
+[Repository & Documentation](https://github.com/Wyze3306/BedrockOnLinux)
+
+---
+
+# Method 7: GDK Version via ProtonGDK
+
+The method mentioned above (BedrockOnLinux) also uses this method behind the scenes.
 
 Minecraft Bedrock on Windows has transitioned from UWP to GDK.
 
@@ -348,7 +381,7 @@ This method runs the native Windows GDK version through ProtonGDK together with 
 
 ---
 
-# Method 7: Windows Virtual Machine
+# Method 8: Windows Virtual Machine
 
 Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 
