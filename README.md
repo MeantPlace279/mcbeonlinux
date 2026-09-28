@@ -3,7 +3,7 @@
 A complete guide to every known method of running Minecraft Bedrock Edition on Linux.
 
 > [!IMPORTANT]
-> All Android-based methods (Methods 1–5) ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working unless you already have the required binaries.
+> All Android-based methods (Methods 1–5) ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working unless you have the required binaries.
 
 ---
 
