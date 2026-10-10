@@ -93,13 +93,11 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 
 ---
 
-# Method 5: Raw CLI (Recommended)
+# Method 5: Raw CLI
 
 Instead of using a launcher, you can directly use the underlying mcpelauncher utilities from the terminal.
 
 Every launcher above ultimately performs these same commands internally.
-
----
 
 ## Step 1 — Install `mcpelauncher-manifest`
 
@@ -112,8 +110,6 @@ sudo apt update
 
 sudo apt install mcpelauncher-manifest
 ```
-
----
 
 ## Step 2 — Build and install `mcpelauncher-extract`
 
@@ -137,8 +133,6 @@ make -j$(nproc)
 sudo make install
 ```
 
----
-
 ## Step 3 — Obtain an x86_64 APK
 
 Download an **x86_64** Minecraft Bedrock APK from **[MCPELife](https://mcpelife.com)**.
@@ -146,7 +140,8 @@ Download an **x86_64** Minecraft Bedrock APK from **[MCPELife](https://mcpelife.
 > [!IMPORTANT]
 > Download the **x86_64** APK, **not** the ARM version.
 
----
+> [!WARNING]
+> The `mcpelauncher-updates` mod is required for this method to work on versions above `1.26.130`. Obtain the appropriate version from the original `mcpelauncher` inside the `MODS` (Anvil) tab. Scroll below for the process of applying a mod.
 
 ## Step 4 — Extract the APK
 
@@ -182,8 +177,6 @@ mcpelauncher-extract ~/Downloads/minecraft.apk ~/Downloads/mcpelauncher_versions
 > mcpelauncher-extract ~/Downloads/minecraft.apk ~/.local/share/mcpelauncher/versions/1.21.0
 > ```
 
----
-
 ## Step 5 — Launch
 
 ### Command syntax
@@ -208,13 +201,9 @@ or
 mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.21.0
 ```
 
----
-
 ## Adding a new version
 
 To add another version, simply repeat **Steps 3–5** using a different APK and destination folder.
-
----
 
 ## Installing mods, resource packs, worlds, and behavior packs
 
@@ -245,8 +234,6 @@ Examples:
 > [!NOTE]
 > Everything stored inside `~/.local/share/mcpelauncher/` is shared globally across every version launched through `mcpelauncher-client`.
 
----
-
 # Obtaining x86_64 APKs
 
 `mcpelauncher-client` only works with **x86_64** Minecraft APKs.
@@ -256,8 +243,6 @@ Examples:
 Cracked x86_64 APKs are available from **[MCPELife](https://mcpelife.com)**.
 
 Other websites may also provide them, but this is one known source.
-
----
 
 ## Official APKs (Legal)
 
@@ -269,8 +254,6 @@ It may be possible to create an **x86_64** Android emulator using **[Android Stu
 
 Again, this has not been verified.
 
----
-
 ### Google Play API
 
 According to the creator of `mcpelauncher` and several members of the project's Discord server, the launcher retrieves x86_64 APKs through a Google Play API.
@@ -278,8 +261,6 @@ According to the creator of `mcpelauncher` and several members of the project's 
 They also claim the approach is similar to **[Aurora Store](https://auroraoss.com/)**.
 
 The implementation has not been publicly documented, but it is worth mentioning.
-
----
 
 # Backing up the binaries
 
@@ -295,8 +276,6 @@ cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-backup/
 
 > [!NOTE]
 > A **[backup of the binaries](https://github.com/MeantPlace279/mcbeonlinux/blob/main/mcpelauncher-backup.zip)** is also available in this repository for convenience.
-
----
 
 # Restoring from backup
 
