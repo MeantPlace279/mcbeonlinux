@@ -316,6 +316,7 @@ Unlike Methods 1–5, this does **not** use the Android version of Minecraft or 
 ### Features
 
 - Runs the Windows version of Minecraft Bedrock.
+- Supports clients via DLL.
 - Real Microsoft/Xbox sign-in.
 - Friends, public servers and Realms.
 - Marketplace support.
