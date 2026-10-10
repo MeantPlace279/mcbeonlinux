@@ -244,7 +244,7 @@ Cracked x86_64 APKs are available from **[MCPELife](https://mcpelife.com)**.
 
 Other websites may also provide them, but this is one known source.
 
-## Official APKs (Legal)
+## Official APKs
 
 ### Android Studio Emulator
 
