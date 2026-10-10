@@ -141,7 +141,7 @@ Download an **x86_64** Minecraft Bedrock APK from **[MCPELife](https://mcpelife.
 > Download the **x86_64** APK, **not** the ARM version.
 
 > [!WARNING]
-> The `mcpelauncher-updates` mod is required for this method to work on versions above `1.26.130`. Obtain the appropriate version from the original `mcpelauncher` inside the `MODS` (Anvil) tab. Scroll below for the process of applying a mod.
+> The `mcpelauncher-updates` mod is required for this method to work on versions above `1.26.130`. Obtain the appropriate version of the mod from the original `mcpelauncher` inside the `MODS` (Anvil) tab. Scroll below for the process of applying a mod.
 
 ## Step 4 — Extract the APK
 
