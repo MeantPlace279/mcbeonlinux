@@ -3,7 +3,7 @@
 A complete guide to every known method of running Minecraft Bedrock Edition on Linux.
 
 > [!IMPORTANT]
-> All Android-based methods (Methods 1–5) ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working unless you have the required binaries.
+> All Android-based methods (Methods 1–5) ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working.
 
 ---
 
@@ -93,218 +93,34 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 
 ---
 
-# Method 5: Raw CLI
+# Method 5: Flarial Client
 
-Instead of using a launcher, you can directly use the underlying mcpelauncher utilities from the terminal.
+A launcher that runs Minecraft for Windows (Bedrock Edition) on Linux using Wine and provides access to the Flarial Client.
 
-Every launcher above ultimately performs these same commands internally.
+Unlike Android-based methods, this method uses the Windows version of Minecraft Bedrock and requires a Microsoft account that owns Minecraft for Windows.
 
-## Step 1 — Install `mcpelauncher-manifest`
+### Features
 
-```sh
-curl -fsSL https://minecraft-linux.github.io/pkg/deb/pubkey.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/mcpelauncher.gpg > /dev/null
+- Runs the Windows version of Minecraft Bedrock.
+- Integrates Wine setup into the launcher.
+- Supports Microsoft account sign-in.
+- Provides access to the Flarial Client.
+- Downloads and manages supported Minecraft versions through the launcher.
+- Opens the Flarial menu in-game using the `K` key.
 
-echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/mcpelauncher.gpg] https://minecraft-linux.github.io/pkg/deb noble main" | sudo tee /etc/apt/sources.list.d/mcpelauncher.list
+### Requirements
 
-sudo apt update
+- 64-bit x86 Linux.
+- Working Vulkan graphics drivers.
+- A Microsoft account that owns Minecraft for Windows (Bedrock).
 
-sudo apt install mcpelauncher-manifest
-```
+### Installation
 
-## Step 2 — Build and install `mcpelauncher-extract`
-
-`mcpelauncher-extract` is not distributed as an independent package, so it must be compiled manually.
-
-```sh
-sudo apt install git cmake clang libzip-dev
-
-git clone https://github.com/minecraft-linux/mcpelauncher-extract.git
-
-cd mcpelauncher-extract
-
-mkdir build
-
-cd build
-
-cmake ..
-
-make -j$(nproc)
-
-sudo make install
-```
-
-## Step 3 — Obtain an x86_64 APK
-
-Download an **x86_64** Minecraft Bedrock APK from **[MCPELife](https://mcpelife.com)**.
-
-> [!IMPORTANT]
-> Download the **x86_64** APK, **not** the ARM version.
-
-> [!WARNING]
-> The `mcpelauncher-updates` mod is required for this method to work on versions above `1.26.130`. Obtain the appropriate version of the mod from the original `mcpelauncher` inside the `MODS` (Anvil) tab. Scroll below for the process of applying a mod.
-
-## Step 4 — Extract the APK
-
-The APK must first be extracted before it can be launched.
-
-### Command syntax
+Open a terminal and run the following command as your normal user. **No `sudo` is required.**
 
 ```sh
-mcpelauncher-extract {PATH_TO_APK} {STORE_PATH}
+curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 ```
-
-### Arguments
-
-- `{PATH_TO_APK}` — Path to the downloaded x86_64 APK.
-- `{STORE_PATH}` — Directory where the extracted version will be stored.
-
-### Example
-
-```sh
-mcpelauncher-extract ~/Downloads/minecraft.apk ~/Downloads/mcpelauncher_versions/1.21.0
-```
-
-> [!TIP]
-> You may also store extracted versions inside:
->
-> `~/.local/share/mcpelauncher/versions`
->
-> This directory is automatically created after installing `mcpelauncher-manifest`.
->
-> Example:
->
-> ```sh
-> mcpelauncher-extract ~/Downloads/minecraft.apk ~/.local/share/mcpelauncher/versions/1.21.0
-> ```
-
-## Step 5 — Launch
-
-### Command syntax
-
-```sh
-mcpelauncher-client -dg {STORED_PATH}
-```
-
-### Arguments
-
-- `{STORED_PATH}` — The directory created during extraction.
-
-### Example
-
-```sh
-mcpelauncher-client -dg ~/Downloads/mcpelauncher_versions/1.21.0
-```
-
-or
-
-```sh
-mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.21.0
-```
-
-## Adding a new version
-
-To add another version, simply repeat **Steps 3–5** using a different APK and destination folder.
-
-## Installing mods, resource packs, worlds, and behavior packs
-
-All user data managed by `mcpelauncher-client` is stored inside:
-
-```text
-~/.local/share/mcpelauncher
-```
-
-This directory is automatically created after installing `mcpelauncher-manifest`.
-
-To open it in your file manager:
-
-```sh
-cd ~/.local/share/mcpelauncher/games/com.mojang
-
-xdg-open .
-```
-
-Place content inside the appropriate folders.
-
-Examples:
-
-- Resource packs → `resource_packs`
-- Behavior packs → `behavior_packs`
-- Worlds → `minecraftWorlds`
-
-> [!NOTE]
-> Everything stored inside `~/.local/share/mcpelauncher/` is shared globally across every version launched through `mcpelauncher-client`.
-
-# Obtaining x86_64 APKs
-
-`mcpelauncher-client` only works with **x86_64** Minecraft APKs.
-
-## Cracked APKs
-
-Cracked x86_64 APKs are available from **[MCPELife](https://mcpelife.com)**.
-
-Other websites may also provide them, but this is one known source.
-
-## Official APKs
-
-### Android Studio Emulator
-
-This method is currently **untested**.
-
-It may be possible to create an **x86_64** Android emulator using **[Android Studio](https://developer.android.com/studio)** and have Google Play provide the x86_64 APK.
-
-Again, this has not been verified.
-
-### Google Play API
-
-According to the creator of `mcpelauncher` and several members of the project's Discord server, the launcher retrieves x86_64 APKs through a Google Play API.
-
-They also claim the approach is similar to **[Aurora Store](https://auroraoss.com/)**.
-
-The implementation has not been publicly documented, but it is worth mentioning.
-
-# Backing up the binaries
-
-Keeping local copies of the launcher binaries ensures they remain usable even if the repositories disappear.
-
-```sh
-mkdir ~/mcpelauncher-backup
-
-cp /usr/bin/mcpelauncher-client ~/mcpelauncher-backup/
-
-cp /usr/local/bin/mcpelauncher-extract ~/mcpelauncher-backup/
-```
-
-> [!NOTE]
-> A **[backup of the binaries](https://github.com/MeantPlace279/mcbeonlinux/blob/main/mcpelauncher-backup.zip)** is also available in this repository for convenience.
-
-# Restoring from backup
-
-If the repositories become unavailable, place the backed-up binaries inside:
-
-```text
-~/mcpelauncher-backup
-```
-
-Then run:
-
-```sh
-cp ~/mcpelauncher-backup/mcpelauncher-extract /usr/local/bin/
-
-cp ~/mcpelauncher-backup/mcpelauncher-client /usr/bin/
-
-chmod +x /usr/local/bin/mcpelauncher-extract
-
-chmod +x /usr/bin/mcpelauncher-client
-```
-
-After restoring, use them exactly as before:
-
-```sh
-mcpelauncher-extract ~/Downloads/minecraft.apk ~/.local/share/mcpelauncher/versions/{VERSION}
-
-mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/{VERSION}
-```
-
 ---
 
 # Method 6: BedrockOnLinux
