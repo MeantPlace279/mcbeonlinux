@@ -27,7 +27,7 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 - Downloads the APK directly from Google Play.
 - Custom APKs are **NOT** supported. ❌
 - The first launcher ever to run Minecraft Bedrock on Linux.
-- DRM support: ✅
+- DRM support: ✅ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
 ### Resources
 
@@ -51,7 +51,7 @@ A modern launcher built on top of the standard mcpelauncher utilities. It adds v
 - Supports custom APKs
 - Built with C++
 - Built-in version management
-- DRM support: ❌
+- DRM support: ❌ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
 ### Resources
 
@@ -74,7 +74,7 @@ A Python launcher featuring a graphical interface built with CustomTkinter.
 - Supports official Google Play APKs
 - Supports custom APKs
 - Built with Python
-- DRM support: ❓
+- DRM support: ❓ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
 ### Resources
 
@@ -98,7 +98,7 @@ A graphical Minecraft Bedrock launcher for Linux built with Python and PySide6 (
 - Independent profiles.
 - Customizable appearance and launch options.
 - GameMode and Zink support.
-- DRM support: ✅
+- DRM support: ✅ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
 ### Installation
 
@@ -130,7 +130,7 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 - Supports custom APKs
 - Standalone AppImage
 - No Flatpak runtime required
-- DRM Support: ❌
+- DRM Support: ❌ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
 ### Resources
 
@@ -245,8 +245,9 @@ Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 
 > [!IMPORTANT]
 > All Android-based methods listed earlier ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working.
+---
 
-# What does "DRM support" mean in Android-based mehtods?
+# What does DRM support mean in Android-based methods?
 
 DRM stands for Digital Rights Management. Newer Minecraft Bedrock APKs distributed through Google Play are protected by Google Play's DRM and integrity checks (the project cites Google Advanced Integrity Protection). Because of this, `mcpelauncher-client` from the `mcpelauncher-manifest` project can't run these newer versions on its own.
 
