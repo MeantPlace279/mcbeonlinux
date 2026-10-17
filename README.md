@@ -6,11 +6,11 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 # Ranking (Top 3)
 
-**1. 🥇 [BedrockOnLinux](#method-5-bedrockonlinux)**
+**1. 🥇 [BedrockOnLinux](#method-6-bedrockonlinux)**
 
 **2. 🥈 [mcpelauncher](#method-1-mcpelauncher)**
 
-**3. 🥉 [Flarial Client](#method-6-flarial-client)**
+**3. 🥉 [Flarial Client](#method-7-flarial-client)**
 
 # Method 1: mcpelauncher 
 
@@ -25,7 +25,7 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 
 - Legal; uses your own purchased copy of Minecraft.
 - Downloads the APK directly from Google Play.
-- Custom APKs are **not officially supported**.
+- Custom APKs are **NOT** supported.
 - The first launcher ever to run Minecraft Bedrock on Linux.
 
 ### Resources
@@ -81,7 +81,55 @@ A Python launcher featuring a graphical interface built with CustomTkinter.
 
 ---
 
-# Method 4: Iosel Edition
+# Method 4: GenovaLauncher
+
+A graphical Minecraft Bedrock launcher for Linux built with Python and PySide6 (Qt6).
+
+### Features
+
+- Automatic mcpelauncher binary detection.
+- Install versions from APK files or Google Play
+- Built-in version management.
+- Resource packs, behavior packs, skins, and worlds management.
+- Integrated mod browser.
+- Independent profiles.
+- Customizable appearance and launch options.
+- GameMode and Zink support.
+
+### Installation
+
+#### Portable Release
+
+```sh
+wget https://github.com/Ars-byte/GenovaLauncher-launcher/releases/latest/download/GenovaLauncher-v1.0.0.tar.gz
+
+tar xzf GenovaLauncher-v1.0.0.tar.gz && cd GenovaLauncher-v1.0.0
+
+./GenovaLauncher.sh
+```
+
+#### From Source
+
+```sh
+git clone https://github.com/Ars-byte/GenovaLauncher-launcher.git
+
+cd GenovaLauncher-launcher
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+./run.sh
+```
+
+### Resources
+
+- [Repository](https://github.com/Ars-byte/GenovaLauncher-launcher)
+- [Documentation](https://ars-byte.github.io/genovalauncher-website/pages/docs.html)
+
+---
+
+# Method 5: Iosel Edition
 
 A modified AppImage fork of mcpelauncher.
 
@@ -100,11 +148,11 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 
 ---
 
-# Method 5: BedrockOnLinux
+# Method 6: BedrockOnLinux
 
 A launcher that runs the **Windows version of Minecraft Bedrock Edition directly on Linux** using your own Microsoft account and licence.
 
-Unlike Methods 1–4, this does **not** use the Android version of Minecraft or `mcpelauncher-client`.
+Unlike Methods 1–5, this does **not** use the Android version of Minecraft or `mcpelauncher-client`.
 
 ### Features
 
@@ -132,7 +180,7 @@ Unlike Methods 1–4, this does **not** use the Android version of Minecraft or 
 
 ---
 
-# Method 6: Flarial Client
+# Method 7: Flarial Client
 
 A launcher that also runs Minecraft for Windows (Bedrock Edition) on Linux using Wine/Proton and provides access to the Flarial Client.
 
@@ -168,7 +216,7 @@ curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 
 ---
 
-# Method 7: GDK Version via ProtonGDK
+# Method 8: GDK Version via ProtonGDK
 
 The methods mentioned above (BedrockOnLinux and Flarial Client) also use this method behind the scenes.
 
@@ -190,7 +238,7 @@ This method runs the native Windows GDK version through ProtonGDK together with 
 
 ---
 
-# Method 8: Windows Virtual Machine
+# Method 9: Windows Virtual Machine
 
 Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 
