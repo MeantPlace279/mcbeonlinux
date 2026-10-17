@@ -27,6 +27,7 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 - Downloads the APK directly from Google Play.
 - Custom APKs are **NOT** supported.
 - The first launcher ever to run Minecraft Bedrock on Linux.
+- DRM support: ✅
 
 ### Resources
 
@@ -50,6 +51,7 @@ A modern launcher built on top of the standard mcpelauncher utilities. It adds v
 - Supports custom APKs
 - Built with C++
 - Built-in version management
+- DRM support: ❌
 
 ### Resources
 
@@ -72,6 +74,7 @@ A Python launcher featuring a graphical interface built with CustomTkinter.
 - Supports official Google Play APKs
 - Supports custom APKs
 - Built with Python
+- DRM support: ❓
 
 ### Resources
 
@@ -95,6 +98,7 @@ A graphical Minecraft Bedrock launcher for Linux built with Python and PySide6 (
 - Independent profiles.
 - Customizable appearance and launch options.
 - GameMode and Zink support.
+- DRM support: ✅
 
 ### Installation
 
@@ -140,6 +144,7 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 - Supports custom APKs
 - Standalone AppImage
 - No Flatpak runtime required
+- DRM Support: ❌
 
 ### Resources
 
