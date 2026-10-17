@@ -14,34 +14,6 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 **3. 🥉 [Flarial Client](#method-7-flarial-client)**
 
----
-
-# How to read this guide
-
-- **Methods 1–5** are Android-based.
-- They run the Android version of Minecraft through `mcpelauncher-client` and `mcpelauncher-extract`.
-  
-- **Methods 6–9** run the Windows version of Minecraft Bedrock.
--  Through Wine/Proton or a virtual machine and do not use `mcpelauncher-client`.
-
----
-
-# What does DRM support mean in Android-based methods?
-
-DRM stands for Digital Rights Management. Newer Minecraft Bedrock APKs distributed through Google Play are protected by Google Play's DRM and integrity checks (the project cites Google Advaced Integrity Protection). Because of this, `mcpelauncher-client` from the `mcpelauncher-manifest` project can't run these newer versions on its own.
-
-The `mcpelauncher-updates` mod is what makes them run. It carries the per-version patches and compatibility code the newer builds need.
-
-That's why it's often called the DRM support mod.
-
-### How DRM support is judged
-
-- ✅ The launcher works with the `mcpelauncher-updates` mod and keeps providing newer Minecraft versions.
-
-- ❌ The launcher can't use the mod, or it has stopped providing newer versions.
-
----
-
 # Method 1: mcpelauncher 
 
 The original launcher and the foundation of nearly every Android-based Bedrock launcher on Linux. It requires owning Minecraft through Google Play and automatically downloads the APK using your Google account.
@@ -234,9 +206,6 @@ Open a terminal and run the following command as your normal user. **No `sudo` i
 curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 ```
 
-> [!CAUTION]
-> This command downloads a script from the internet and runs it immediately. If you want to check what it does first, download it with `curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh -o install.sh`, read it, and then run it with `sh install.sh`.
-
 ### Resources
 
 - [Website](https://flarial.xyz/download/?p=linux#installation)
@@ -276,6 +245,33 @@ Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 - Works reliably
 - Higher resource usage
 - Best used as a last resort
+
+---
+
+# Android Dependency
+
+> [!IMPORTANT]
+> All Android-based methods listed above (Methods 1–5, including mcpelauncher itself) ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed above will eventually stop working.
+
+---
+
+# What does DRM support mean in Android-based methods?
+
+DRM stands for Digital Rights Management.
+
+Newer Minecraft Bedrock APKs distributed through Google Play are protected by Google Play's DRM and integrity checks (the `mcpelauncher-manifest` project cites Google Advanced Integrity Protection).
+
+Because of this, `mcpelauncher-client` from the `mcpelauncher-manifest` project can't run these newer versions on its own.
+
+The `mcpelauncher-updates` mod is what makes them run. It carries the per-version patches and compatibility code the newer builds need.
+
+That's why it's often called the DRM support mod.
+
+### How DRM support is judged
+
+- ✅ The launcher works with the `mcpelauncher-updates` mod and keeps providing newer Minecraft versions.
+
+- ❌ The launcher can't use the mod, or it has stopped providing newer versions.
 
 ---
 
