@@ -6,11 +6,41 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 # Ranking (Top 3)
 
+> The ranking is the opinion of this guide's author.
+
 **1. 🥇 [BedrockOnLinux](#method-6-bedrockonlinux)**
 
 **2. 🥈 [mcpelauncher](#method-1-mcpelauncher)**
 
 **3. 🥉 [Flarial Client](#method-7-flarial-client)**
+
+---
+
+# How to read this guide
+
+- **Methods 1–5** are Android-based.
+- They run the Android version of Minecraft through `mcpelauncher-client` and `mcpelauncher-extract`.
+  
+- **Methods 6–9** run the Windows version of Minecraft Bedrock.
+-  Through Wine/Proton or a virtual machine and do not use `mcpelauncher-client`.
+
+---
+
+# What does DRM support mean in Android-based methods?
+
+DRM stands for Digital Rights Management. Newer Minecraft Bedrock APKs distributed through Google Play are protected by Google Play's DRM and integrity checks (the project cites Google Advaced Integrity Protection). Because of this, `mcpelauncher-client` from the `mcpelauncher-manifest` project can't run these newer versions on its own.
+
+The `mcpelauncher-updates` mod is what makes them run. It carries the per-version patches and compatibility code the newer builds need.
+
+That's why it's often called the DRM support mod.
+
+### How DRM support is judged
+
+- ✅ The launcher works with the `mcpelauncher-updates` mod and keeps providing newer Minecraft versions.
+
+- ❌ The launcher can't use the mod, or it has stopped providing newer versions.
+
+---
 
 # Method 1: mcpelauncher 
 
@@ -23,7 +53,7 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 
 ### Features
 
-- Legal; uses your own purchased copy of Minecraft. 
+- Requires owning Minecraft on Google Play; uses your own purchased copy of Minecraft. 
 - Downloads the APK directly from Google Play.
 - Custom APKs are **NOT** supported. ❌
 - The first launcher ever to run Minecraft Bedrock on Linux.
@@ -67,6 +97,9 @@ Developed by `craftplaga`, a member of the [*Las Tortuguitas de Ezku*](https://d
 
 A Python launcher featuring a graphical interface built with CustomTkinter.
 
+> [!NOTE]
+> The `PlaGaPlusDev` and `CianovaTeam` GitHub accounts redirect to the same project, so the repository may appear under either name.
+
 ### Features
 
 - Uses `mcpelauncher-client`
@@ -74,7 +107,8 @@ A Python launcher featuring a graphical interface built with CustomTkinter.
 - Supports official Google Play APKs
 - Supports custom APKs
 - Built with Python
-- DRM support: ❓ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
+- Offers to install the DRM mod (`mcpelauncher-updates`) when it is missing
+- DRM support: ✅ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
 ### Resources
 
@@ -123,14 +157,14 @@ tar xzf GenovaLauncher-v1.0.0.tar.gz && cd GenovaLauncher-v1.0.0
 
 A modified AppImage fork of mcpelauncher.
 
-It claims to remove the dependency on the Flatpak runtime and was created by a contributor associated with the Trinity project.
+It claims to remove the dependency on the Flatpak runtime and was reportedly created by a contributor associated with the Trinity project.
 
 ### Features
 
 - Supports custom APKs
 - Standalone AppImage
 - No Flatpak runtime required
-- DRM Support: ❌ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
+- DRM support: ❌ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
 ### Resources
 
@@ -200,6 +234,9 @@ Open a terminal and run the following command as your normal user. **No `sudo` i
 curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 ```
 
+> [!CAUTION]
+> This command downloads a script from the internet and runs it immediately. If you want to check what it does first, download it with `curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh -o install.sh`, read it, and then run it with `sh install.sh`.
+
 ### Resources
 
 - [Website](https://flarial.xyz/download/?p=linux#installation)
@@ -209,7 +246,7 @@ curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 
 # Method 8: GDK Version via ProtonGDK
 
-The methods mentioned above (BedrockOnLinux and Flarial Client) also use this method behind the scenes.
+The methods mentioned above (BedrockOnLinux and Flarial Client) are understood to use this approach behind the scenes.
 
 Minecraft Bedrock on Windows has transitioned from UWP to GDK.
 
@@ -239,21 +276,6 @@ Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 - Works reliably
 - Higher resource usage
 - Best used as a last resort
-
----
-# Android Dependency
-
-> [!IMPORTANT]
-> All Android-based methods listed earlier ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working.
----
-
-# What does DRM support mean in Android-based methods?
-
-DRM stands for Digital Rights Management. Newer Minecraft Bedrock APKs distributed through Google Play are protected by Google Play's DRM and integrity checks (the project cites Google Advanced Integrity Protection). Because of this, `mcpelauncher-client` from the `mcpelauncher-manifest` project can't run these newer versions on its own.
-
-The `mcpelauncher-updates` mod is what makes them run. It's carries the per-version patches and compatibility code the newer builds need.
-
-That's why it's often called the DRM support mod.
 
 ---
 
