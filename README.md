@@ -253,7 +253,7 @@ DRM stands for Digital Rights Management. Newer Minecraft Bedrock APKs distribut
 
 The `mcpelauncher-updates` mod is what makes them run. It's carries the per-version patches and compatibility code the newer builds need.
 
-That's why it's often called the DRM mod.
+That's why it's often called the DRM support mod.
 
 ---
 
