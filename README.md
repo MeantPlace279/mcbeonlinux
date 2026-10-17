@@ -156,6 +156,8 @@ Open a terminal and run the following command as your normal user. **No `sudo` i
 curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 ```
 
+### Resources
+
 - [Website](https://flarial.xyz/download/?p=linux#installation)
 - [Repository](https://github.com/flarialmc/linux)
 
