@@ -390,6 +390,8 @@ CCMC Launcher worked similarly to Trinity by extracting and launching custom APK
 
 The repository has since been deleted or made private.
 
+The repository is still available on [Codeberg](https://codeberg.org/Crow_Rei34/CC-MC)
+
 It is believed to have been discontinued when Trinity Launcher was introduced, as both projects shared a developer (JavierC).
 
 <img width="698" height="904" alt="image" src="https://github.com/user-attachments/assets/b993b443-6ff6-4c29-ad14-813fe320a887" />
