@@ -112,24 +112,10 @@ tar xzf GenovaLauncher-v1.0.0.tar.gz && cd GenovaLauncher-v1.0.0
 ./GenovaLauncher.sh
 ```
 
-#### From Source
-
-```sh
-git clone https://github.com/Ars-byte/GenovaLauncher-launcher.git
-
-cd GenovaLauncher-launcher
-
-python3 -m venv venv
-source venv/bin/activate
-
-pip install -r requirements.txt
-./run.sh
-```
-
 ### Resources
 
+- [Website](https://ars-byte.github.io/genovalauncher-website/pages/docs.html)
 - [Repository](https://github.com/Ars-byte/GenovaLauncher-launcher)
-- [Documentation](https://ars-byte.github.io/genovalauncher-website/pages/docs.html)
 
 ---
 
