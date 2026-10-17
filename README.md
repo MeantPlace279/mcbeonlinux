@@ -246,6 +246,12 @@ Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 > [!IMPORTANT]
 > All Android-based methods listed earlier ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working.
 
+# What does "DRM support" mean in Android-based mehtods?
+
+DRM stands for Digital Rights Management. Newer Minecraft Bedrock APKs distributed through Google Play are protected by Google Play's DRM and integrity checks (the project cites Google Advanced Integrity Protection). Because of this, `mcpelauncher-client` from the `mcpelauncher-manifest` project can't run these newer versions on its own.
+
+The `mcpelauncher-updates` mod is what makes them run. It's carries the per-version patches and compatibility code the newer builds need.
+
 ---
 
 # Outdated Methods
