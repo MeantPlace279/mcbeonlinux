@@ -90,7 +90,7 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 
 ### Resources
 
-- [Repository & Documentation](https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition)
+- [Repository](https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition)
 - [Tutorial](https://youtu.be/BAZqN_NhIj4?si=eEuOY4TvDeE_VpWQ)
 
 ---
