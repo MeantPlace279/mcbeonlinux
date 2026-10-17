@@ -6,7 +6,7 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 # Ranking (Top 3)
 
-> The ranking is the opinion of this guide's author.
+> The ranking is the opinion of the guide's author.
 
 **1. 🥇 [BedrockOnLinux](#method-6-bedrockonlinux)**
 
