@@ -64,12 +64,14 @@ A Python launcher featuring a graphical interface built with CustomTkinter.
 
 - Uses `mcpelauncher-client`
 - Uses `mcpelauncher-extract`
+- Supports official Google Play APKs
 - Supports custom APKs
 - Built with Python
 
 ### Resources
 
-- [Repository & Documentation](https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher)
+- [Website](https://cianovalauncher.org)
+- [Repository](https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher)
 - [Video Tutorial](https://youtu.be/-tl4ZSJ3DSE?si=-xfBd_xV1Of5XfHI)
 
 ---
@@ -154,8 +156,8 @@ Open a terminal and run the following command as your normal user. **No `sudo` i
 curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 ```
 
-[Website](https://flarial.xyz/download/?p=linux#installation)
-[Repository](https://github.com/flarialmc/linux)
+- [Website](https://flarial.xyz/download/?p=linux#installation)
+- [Repository](https://github.com/flarialmc/linux)
 
 ---
 
