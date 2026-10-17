@@ -56,7 +56,7 @@ A modern launcher built on top of the standard mcpelauncher utilities. It adds v
 
 # Method 3: Cianova Launcher
 
-Developed by the *Las Tortuguitas de Ezku* community.
+Developed by the [*Las Tortuguitas de Ezku*](https://discord.com/invite/las-tortuguitas-de-ezku-1214414622111567892) community.
 
 A Python launcher featuring a graphical interface built with CustomTkinter.
 
