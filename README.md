@@ -388,9 +388,9 @@ Recent Minecraft versions become stuck at the loading screen, making this method
 
 CCMC Launcher worked similarly to Trinity by extracting and launching custom APKs.
 
-The repository has since been deleted or made private.
+The GitHub repository has since been deleted or made private.
 
-The repository is still available on [Codeberg](https://codeberg.org/Crow_Rei34/CC-MC).
+The [Codeberg](https://codeberg.org/Crow_Rei34/CC-MC) repository is still available.
 
 It is believed to have been discontinued when Trinity Launcher was introduced, as both projects shared a developer (JavierC).
 
