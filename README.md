@@ -2,20 +2,17 @@
 
 A complete guide to every known method of running Minecraft Bedrock Edition on Linux.
 
-> [!IMPORTANT]
-> All Android-based methods (Methods 1–4) ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working.
-
 ---
 
 # Ranking (Top 3)
 
 **1. 🥇 [BedrockOnLinux](#method-5-bedrockonlinux)**
 
-**2. 🥈 [MCPELauncher](#method-1-mcpelauncher)**
+**2. 🥈 [mcpelauncher](#method-1-mcpelauncher)**
 
 **3. 🥉 [Flarial Client](#method-6-flarial-client)**
 
-# Method 1: MCPELauncher 
+# Method 1: mcpelauncher 
 
 The original launcher and the foundation of nearly every Android-based Bedrock launcher on Linux. It requires owning Minecraft through Google Play and automatically downloads the APK using your Google account.
 
@@ -203,6 +200,12 @@ Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 - Works reliably
 - Higher resource usage
 - Best used as a last resort
+
+---
+# Android Dependency
+
+> [!IMPORTANT]
+> All Android-based methods listed earlier ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed below will eventually stop working.
 
 ---
 
