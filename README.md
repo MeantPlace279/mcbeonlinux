@@ -123,7 +123,7 @@ Unlike Methods 1–4, this does **not** use the Android version of Minecraft or 
 
 ### Resources
 
-[Repository](https://github.com/Wyze3306/BedrockOnLinux)
+- [Repository](https://github.com/Wyze3306/BedrockOnLinux)
 
 ---
 
@@ -220,7 +220,6 @@ It is believed to have been discontinued when Trinity Launcher was introduced, a
 
 
 ### Historical Tutorials (Portuguese)
-
-1. [Tutorial 1](https://youtu.be/4K1X8PafWf0?si=jZe4X5xsA9nplT5h)
-2. [Tutorial 2](https://youtu.be/VfVwqMcKhy0?si=_C70rhEyabASEKgb)
-3. [Tutorial 3](https://youtu.be/sYvpEpwin6k?si=sD631OfATfYwzbH1)
+- [Tutorial 1](https://youtu.be/4K1X8PafWf0?si=jZe4X5xsA9nplT5h)
+- [Tutorial 2](https://youtu.be/VfVwqMcKhy0?si=_C70rhEyabASEKgb)
+- [Tutorial 3](https://youtu.be/sYvpEpwin6k?si=sD631OfATfYwzbH1)
