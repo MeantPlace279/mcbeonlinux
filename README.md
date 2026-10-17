@@ -7,7 +7,7 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 ---
 
-# Method 1: mcpelauncher
+# Method 1: mcpelauncher 
 
 The original launcher and the foundation of nearly every Android-based Bedrock launcher on Linux. It requires owning Minecraft through Google Play and automatically downloads the APK using your Google account.
 
@@ -93,41 +93,11 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 
 ---
 
-# Method 5: Flarial Client
-
-A launcher that runs Minecraft for Windows (Bedrock Edition) on Linux using Wine and provides access to the Flarial Client.
-
-Unlike Android-based methods, this method uses the Windows version of Minecraft Bedrock and requires a Microsoft account that owns Minecraft for Windows.
-
-### Features
-
-- Runs the Windows version of Minecraft Bedrock.
-- Integrates Wine setup into the launcher.
-- Supports Microsoft account sign-in.
-- Provides access to the Flarial Client.
-- Downloads and manages supported Minecraft versions through the launcher.
-- Opens the Flarial menu in-game using the `K` key.
-
-### Requirements
-
-- 64-bit x86 Linux.
-- Working Vulkan graphics drivers.
-- A Microsoft account that owns Minecraft for Windows (Bedrock).
-
-### Installation
-
-Open a terminal and run the following command as your normal user. **No `sudo` is required.**
-
-```sh
-curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
-```
----
-
-# Method 6: BedrockOnLinux
+# Method 5: BedrockOnLinux
 
 A launcher that runs the **Windows version of Minecraft Bedrock Edition directly on Linux** using your own Microsoft account and licence.
 
-Unlike Methods 1–5, this does **not** use the Android version of Minecraft or `mcpelauncher-client`.
+Unlike Methods 1–4, this does **not** use the Android version of Minecraft or `mcpelauncher-client`.
 
 ### Features
 
@@ -155,9 +125,42 @@ Unlike Methods 1–5, this does **not** use the Android version of Minecraft or 
 
 ---
 
+# Method 6: Flarial Client
+
+A launcher that also runs Minecraft for Windows (Bedrock Edition) on Linux using Wine/Proton and provides access to the Flarial Client.
+
+This method uses the Windows version of Minecraft Bedrock and requires a Microsoft account that owns Minecraft for Windows.
+
+### Features
+
+- Runs the Windows version of Minecraft Bedrock.
+- Integrates Wine setup into the launcher.
+- Supports Microsoft account sign-in.
+- Provides access to the Flarial Client.
+- Downloads and manages supported Minecraft versions through the launcher.
+- Opens the Flarial menu in-game using the `K` key.
+
+### Requirements
+
+- 64-bit x86 Linux.
+- Working Vulkan graphics drivers.
+- A Microsoft account that owns Minecraft for Windows (Bedrock).
+
+### Installation
+
+Open a terminal and run the following command as your normal user. **No `sudo` is required.**
+
+```sh
+curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
+```
+
+[Website](https://flarial.xyz/download/?p=linux#installation)
+[Repository](https://github.com/flarialmc/linux)
+---
+
 # Method 7: GDK Version via ProtonGDK
 
-The method mentioned above (BedrockOnLinux) also uses this method behind the scenes.
+The methods mentioned above (BedrockOnLinux and Flarial Client) also use this method behind the scenes.
 
 Minecraft Bedrock on Windows has transitioned from UWP to GDK.
 
