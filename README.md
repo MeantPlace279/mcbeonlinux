@@ -27,7 +27,7 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 
 - [Repository](https://github.com/minecraft-linux/mcpelauncher-manifest)
 - [Documentation](https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html)
-- [Video Tutorial](https://youtu.be/rg_OH-nmoeQ?si=RNMzFO5ml4G2WJbF)
+- [Tutorial](https://youtu.be/rg_OH-nmoeQ?si=RNMzFO5ml4G2WJbF)
 
 ---
 
@@ -50,7 +50,7 @@ A modern launcher built on top of the standard mcpelauncher utilities. It adds v
 
 - [Repository](https://github.com/Trinity-LA/Trinity-Launcher)
 - [Documentation](https://trinitylauncher.vercel.app/)
-- [Video Tutorial](https://youtu.be/ZMAamMBm8Go?si=qwZ7xOhtclxPyDw7)
+- [Tutorial](https://youtu.be/ZMAamMBm8Go?si=qwZ7xOhtclxPyDw7)
 
 ---
 
@@ -72,7 +72,7 @@ A Python launcher featuring a graphical interface built with CustomTkinter.
 
 - [Website](https://cianovalauncher.org)
 - [Repository](https://github.com/PlaGaPlusDev/CianovaLauncher-mcpelauncher)
-- [Video Tutorial](https://youtu.be/-tl4ZSJ3DSE?si=-xfBd_xV1Of5XfHI)
+- [Tutorial](https://youtu.be/-tl4ZSJ3DSE?si=-xfBd_xV1Of5XfHI)
 
 ---
 
@@ -91,7 +91,7 @@ It claims to remove the dependency on the Flatpak runtime and was created by a c
 ### Resources
 
 - [Repository & Documentation](https://github.com/IoselDev/Minecraft-Bedrock-Linux-Iosel-Edition)
-- [Video Tutorial](https://youtu.be/BAZqN_NhIj4?si=eEuOY4TvDeE_VpWQ)
+- [Tutorial](https://youtu.be/BAZqN_NhIj4?si=eEuOY4TvDeE_VpWQ)
 
 ---
 
@@ -123,7 +123,7 @@ Unlike Methods 1–4, this does **not** use the Android version of Minecraft or 
 
 ### Resources
 
-[Repository & Documentation](https://github.com/Wyze3306/BedrockOnLinux)
+[Repository](https://github.com/Wyze3306/BedrockOnLinux)
 
 ---
 
