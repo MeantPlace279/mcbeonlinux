@@ -23,9 +23,9 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 
 ### Features
 
-- Legal; uses your own purchased copy of Minecraft.
+- Legal; uses your own purchased copy of Minecraft. 
 - Downloads the APK directly from Google Play.
-- Custom APKs are **NOT** supported.
+- Custom APKs are **NOT** supported. ❌
 - The first launcher ever to run Minecraft Bedrock on Linux.
 - DRM support: ✅
 
