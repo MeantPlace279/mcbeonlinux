@@ -392,6 +392,9 @@ The repository has since been deleted or made private.
 
 It is believed to have been discontinued when Trinity Launcher was introduced, as both projects shared a developer (JavierC).
 
+<img width="698" height="904" alt="image" src="https://github.com/user-attachments/assets/b993b443-6ff6-4c29-ad14-813fe320a887" />
+
+
 ### Historical Tutorials (Portuguese)
 
 1. [Tutorial 1](https://youtu.be/4K1X8PafWf0?si=jZe4X5xsA9nplT5h)
