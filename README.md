@@ -156,6 +156,7 @@ curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 
 [Website](https://flarial.xyz/download/?p=linux#installation)
 [Repository](https://github.com/flarialmc/linux)
+
 ---
 
 # Method 7: GDK Version via ProtonGDK
