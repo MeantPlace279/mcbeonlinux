@@ -9,11 +9,13 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 # Ranking (Top 3)
 
-1. 🥇 [BedrockOnLinux](#method-5-bedrockonlinux) 
-2. 🥈 [MCPELauncher](#method-1-mcpelauncher)
-3. 🥉 [Flarial Client](#method-6-flarial-client)
+**1. 🥇 [BedrockOnLinux](#method-5-bedrockonlinux)**
 
-# Method 1: mcpelauncher 
+**2. 🥈 [MCPELauncher](#method-1-mcpelauncher)**
+
+**3. 🥉 [Flarial Client](#method-6-flarial-client)**
+
+# Method 1: MCPELauncher 
 
 The original launcher and the foundation of nearly every Android-based Bedrock launcher on Linux. It requires owning Minecraft through Google Play and automatically downloads the APK using your Google account.
 
