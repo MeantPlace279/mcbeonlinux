@@ -58,7 +58,7 @@ A modern launcher built on top of the standard mcpelauncher utilities. It adds v
 ### Resources
 
 - [Repository](https://github.com/Trinity-LA/Trinity-Launcher)
-- [Documentation](https://trinitylauncher.vercel.app/)
+- [Documentation](https://docs-trinity.vercel.app/)
 - [Tutorial](https://youtu.be/ZMAamMBm8Go?si=qwZ7xOhtclxPyDw7)
 
 ---
