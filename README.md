@@ -271,7 +271,7 @@ That's why it's often called the DRM support mod.
 
 - ✅ The launcher works with the `mcpelauncher-updates` mod and keeps providing newer Minecraft versions.
 
-- ❌ The launcher can't use the mod, or it has stopped providing newer versions.
+- ❌ The launcher doesn't the mod, or it has stopped providing newer versions.
 
 ---
 
