@@ -18,11 +18,6 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 The original launcher and the foundation of nearly every Android-based Bedrock launcher on Linux. It requires owning Minecraft through Google Play and automatically downloads the APK using your Google account.
 
-> [!WARNING]
-> ChristopherHX (maintainer of mcpelauncher) [stated](https://discord.com/channels/429580677617418240/429580677617418243/1475181891043725404) on the [official Discord](https://discord.gg/UkXJMCcxhr) on **22 February 2026**:
->
-> > "Yes we are sitting on top a cave full of tnt, you have no long term update warranties. Update delays / stops could happen at any point of time, since the DRM has been enabled."
-
 ### Features
 
 - Requires owning Minecraft on Google Play; uses your own purchased copy of Minecraft. 
@@ -31,11 +26,20 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 - The first launcher ever to run Minecraft Bedrock on Linux.
 - DRM support: ✅ ([What does this mean?](#what-does-drm-support-mean-in-android-based-methods))
 
+#
+> [!WARNING]
+> Based on information shared in the official [mcpelauncher Discord](https://discord.gg/UkXJMCcxhr), the Android-based `mcpelauncher` method may be decommissioned with Minecraft 26.70, ending its legal use.
+>
+> The project appears to be moving toward Minecraft for Windows through Xodus. However, recent license-verification changes have reportedly prevented Xodus from obtaining licenses, and further Microsoft countermeasures against Xodus forks could make this migration impossible.
+
 ### Resources
 
 - [Repository](https://github.com/minecraft-linux/mcpelauncher-manifest)
 - [Documentation](https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html)
 - [Tutorial](https://youtu.be/rg_OH-nmoeQ?si=RNMzFO5ml4G2WJbF)
+
+> [!NOTE]
+> The potential discontinuation of the foundational `mcpelauncher` project raises questions about the future of Android-based launchers built on top of it, such as those mentioned below, including Trinity, Cianova, and GenovaLauncher. The impact on these projects remains unclear, and it is currently unknown whether they will continue to function, adapt to changes, or eventually become unsupported.
 
 ---
 
@@ -213,7 +217,42 @@ curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 
 ---
 
-# Method 8: GDK Version via ProtonGDK
+# Method 8: Xodus Nexus
+
+A desktop launcher that uses Xodus to install and run the **Windows version of Minecraft Bedrock** on Linux. It combines a patched Xodus backend for Microsoft sign-in, licence checks and game downloads with the Nexus Runtime, a Wine/Proton-based compatibility environment.
+
+> [!NOTE]
+> Xodus itself is the underlying project, Xodus Nexus is an independent, unofficial project built on Xodus and supplies its own backend and runtime. It is not an official release from the upstream Xodus developers.
+
+### Features
+
+- Runs Minecraft for Windows (Bedrock/GDK), not the Android version.
+- Microsoft account sign-in and genuine Microsoft Store licence checks.
+- Downloads and installs the game through Microsoft's Store infrastructure under your own purchase or subscription entitlement.
+- Uses the Nexus Runtime, which combines Wine/Proton, XGameRuntime, DXVK and VKD3D-Proton.
+- Graphical interface for the Store, game library, downloads and updates.
+
+### Requirements
+
+- A Microsoft account with a Minecraft for Windows purchase or valid subscription entitlement.
+
+### Installation
+
+1. Download the latest x86_64 Linux AppImage from the [Releases](https://github.com/domsvoboda/xodus-nexus/releases) page.
+2. Make the AppImage executable and open it.
+3. On first startup, let the launcher install and verify the Nexus backend.
+4. Install the Nexus runtime.
+5. Sign in with your Microsoft account, install **Minecraft for Windows** from the launcher, and launch it.
+
+### Resources
+
+- [Repository](https://github.com/domsvoboda/xodus-nexus)
+- [Documentation](https://github.com/domsvoboda/xodus-nexus/wiki)
+- [Upstream Xodus Repository](https://github.com/xodus-gaming/xodus)
+
+---
+
+# Method 9: GDK Version via ProtonGDK
 
 The methods mentioned above (BedrockOnLinux and Flarial Client) are understood to use this approach behind the scenes.
 
@@ -235,7 +274,7 @@ This method runs the native Windows GDK version through ProtonGDK together with 
 
 ---
 
-# Method 9: Windows Virtual Machine
+# Method 10: Windows Virtual Machine
 
 Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 
@@ -245,13 +284,6 @@ Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 - Works reliably
 - Higher resource usage
 - Best used as a last resort
-
----
-
-# Android Dependency
-
-> [!IMPORTANT]
-> All Android-based methods listed above (Methods 1–5, including mcpelauncher itself) ultimately depend on `mcpelauncher-client` and `mcpelauncher-extract` from the `mcpelauncher-manifest` project. If that project ever becomes unavailable, every Android-based launcher listed above will eventually stop working.
 
 ---
 
