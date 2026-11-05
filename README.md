@@ -165,8 +165,6 @@ Unlike the methods above, Cinnabar does **not** launch the official Android or W
 ### Features
 
 - Native Linux client distributed as an x86_64 AppImage.
-- Stable releases and daily nightly builds are available; the latest listed nightly is dated **November 4, 2026**.
-- Microsoft account sign-in using device-code authentication.
 - Supports public servers, Realms, and friends' worlds.
 - Live resource-pack management.
 - Built-in multi-account manager.
@@ -175,7 +173,6 @@ Unlike the methods above, Cinnabar does **not** launch the official Android or W
 - WebAssembly mod support (currently in preview).
 - Optional Bedrock 1.12-style PvP visuals.
 - Current target game version: **1.26.60** (as of November 5, 2026).
-- Does not use `mcpelauncher-client` or run the official Bedrock game binary.
 
 ### Requirements
 
