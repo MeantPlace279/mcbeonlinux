@@ -3,7 +3,7 @@
 A complete guide to every known method of running Minecraft Bedrock Edition on Linux.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Methods-10-blue?style=flat-square" alt="Methods: 10">
+  <img src="https://img.shields.io/badge/Methods-11-blue?style=flat-square" alt="Methods: 11">
   <img src="https://img.shields.io/badge/Last%20Updated-Nov%205%2C%202026-blue?style=flat-square" alt="Last updated - November 5, 2026">
 </p>
 
@@ -13,11 +13,11 @@ A complete guide to every known method of running Minecraft Bedrock Edition on L
 
 > The ranking is the opinion of the guide's author.
 
-**1. 🥇 [BedrockOnLinux](#method-6-bedrockonlinux)**
+**1. 🥇 [BedrockOnLinux](#method-7-bedrockonlinux)**
 
 **2. 🥈 [mcpelauncher](#method-1-mcpelauncher)**
 
-**3. 🥉 [Flarial Client](#method-7-flarial-client)**
+**3. 🥉 [Flarial Client](#method-8-flarial-client)**
 
 # Method 1: mcpelauncher 
 
@@ -156,7 +156,61 @@ It claims to remove the dependency on the Flatpak runtime and was reportedly cre
 
 ---
 
-# Method 6: BedrockOnLinux
+# Method 6: Cinnabar
+
+An independent Minecraft: Bedrock Edition client written from scratch in Rust, with a separate Go-based core for authentication and networking.
+
+Unlike the methods above, Cinnabar does **not** launch the official Android or Windows Bedrock client. It implements its own Bedrock-compatible client and can connect to real servers, Realms, and friends' worlds.
+
+### Features
+
+- Native Linux client distributed as an x86_64 AppImage.
+- Stable releases and daily nightly builds are available; the latest listed nightly is dated **November 4, 2026**.
+- Microsoft account sign-in using device-code authentication.
+- Supports public servers, Realms, and friends' worlds.
+- Live resource-pack management.
+- Built-in multi-account manager.
+- Custom skins and skin packs.
+- Discord Rich Presence, joining, and inviting friends.
+- WebAssembly mod support (currently in preview).
+- Optional Bedrock 1.12-style PvP visuals.
+- Current target game version: **1.26.60** (as of November 5, 2026).
+- Does not use `mcpelauncher-client` or run the official Bedrock game binary.
+
+### Requirements
+
+- 64-bit x86 Linux for the provided AppImage.
+- A Microsoft account for device-code sign-in.
+- Acceptance of the Minecraft EULA on first launch.
+- For building from source on Debian/Ubuntu: `libwayland-dev` and `libudev-dev`.
+
+### Installation
+
+1. Download the latest Linux AppImage from the [Releases](https://github.com/cinnabar-mc/cinnabar/releases) page.
+2. Make it executable and launch it:
+
+```sh
+chmod +x Cinnabar-x86_64.AppImage
+./Cinnabar-x86_64.AppImage
+```
+
+3. Accept the Minecraft EULA when prompted, then sign in using the Microsoft device code.
+
+> [!WARNING]
+> Cinnabar is a non-vanilla client and is still in development. Its movement and combat may not exactly match the official client. Server anti-cheat systems may flag it, and some servers may ban users for using it.
+
+> [!NOTE]
+> Cinnabar is an independent, unofficial project and is not approved by or associated with Mojang or Microsoft. Its public documentation describes Microsoft account sign-in and EULA acceptance, but does not clearly state whether a Minecraft purchase entitlement is checked.
+
+### Resources
+
+- [Website](https://cinnabar.gg/)
+- [Repository](https://github.com/cinnabar-mc/cinnabar)
+- [Releases](https://github.com/cinnabar-mc/cinnabar/releases)
+
+---
+
+# Method 7: BedrockOnLinux
 
 A launcher that runs the **Windows version of Minecraft Bedrock Edition directly on Linux** using your own Microsoft account and licence.
 
@@ -188,7 +242,7 @@ Unlike Methods 1–5, this does **not** use the Android version of Minecraft or 
 
 ---
 
-# Method 7: Flarial Client
+# Method 8: Flarial Client
 
 A launcher that also runs Minecraft for Windows (Bedrock Edition) on Linux using Wine/Proton and provides access to the Flarial Client.
 
@@ -224,7 +278,7 @@ curl -fsSL https://cdn.flarial.xyz/launcher/linux/install.sh | sh
 
 ---
 
-# Method 8: Xodus Nexus
+# Method 9: Xodus Nexus
 
 A desktop launcher that uses Xodus to install and run the **Windows version of Minecraft Bedrock** on Linux. It combines a patched Xodus backend for Microsoft sign-in, licence checks and game downloads with the Nexus Runtime, a Wine/Proton-based compatibility environment.
 
@@ -259,7 +313,7 @@ A desktop launcher that uses Xodus to install and run the **Windows version of M
 
 ---
 
-# Method 9: GDK Version via ProtonGDK
+# Method 10: GDK Version via ProtonGDK
 
 The methods mentioned above (BedrockOnLinux and Flarial Client) are understood to use this approach behind the scenes.
 
@@ -281,7 +335,7 @@ This method runs the native Windows GDK version through ProtonGDK together with 
 
 ---
 
-# Method 10: Windows Virtual Machine
+# Method 11: Windows Virtual Machine
 
 Run Windows inside a virtual machine and play Minecraft Bedrock normally.
 
