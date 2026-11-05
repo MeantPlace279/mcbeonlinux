@@ -2,6 +2,11 @@
 
 A complete guide to every known method of running Minecraft Bedrock Edition on Linux.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Methods-10-blue?style=flat-square" alt="Methods: 10">
+  <img src="https://img.shields.io/badge/Last%20Updated-Nov%205%2C%202026-blue?style=flat-square" alt="Last updated - November 5, 2026">
+</p>
+
 ---
 
 # Ranking (Top 3)
@@ -28,9 +33,11 @@ The original launcher and the foundation of nearly every Android-based Bedrock l
 
 #
 > [!WARNING]
-> Based on information shared in the official [mcpelauncher Discord](https://discord.gg/UkXJMCcxhr), the Android-based `mcpelauncher` method may be decommissioned with Minecraft 26.70, ending its legal use.
->
-> The project appears to be moving toward Minecraft for Windows through Xodus. However, recent license-verification changes have reportedly prevented Xodus from obtaining licenses, and further Microsoft countermeasures against Xodus forks could make this migration impossible.
+> The mcpelauncher-client is expected to be decommissioned with the release of Minecraft Bedrock Edition 26.70, bringing an end to the legal method of using this launcher on Android.
+> 
+> The maintainer has not specified whether the Linux and macOS versions will also be discontinued.
+> 
+> The project appears to be moving toward Minecraft for Windows through [Xodus](https://github.com/xodus-gaming/xodus). However, recent license-verification changes have reportedly prevented Xodus from obtaining licenses, and further Microsoft countermeasures against Xodus forks could make this migration impossible.
 
 ### Resources
 
