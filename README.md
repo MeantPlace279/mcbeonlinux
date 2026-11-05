@@ -207,6 +207,7 @@ chmod +x Cinnabar-x86_64.AppImage
 - [Website](https://cinnabar.gg/)
 - [Repository](https://github.com/cinnabar-mc/cinnabar)
 - [Releases](https://github.com/cinnabar-mc/cinnabar/releases)
+- [Target version manifest](https://github.com/cinnabar-mc/cinnabar/blob/dev/assets/bedrock-target.json)
 
 ---
 
@@ -214,7 +215,7 @@ chmod +x Cinnabar-x86_64.AppImage
 
 A launcher that runs the **Windows version of Minecraft Bedrock Edition directly on Linux** using your own Microsoft account and licence.
 
-Unlike Methods 1–5, this does **not** use the Android version of Minecraft or `mcpelauncher-client`.
+Unlike Methods 1–5, this does **not** use the Android version of Minecraft or `mcpelauncher-client`. Behind the scenes, BedrockOnLinux uses [Xodus](https://github.com/xodus-gaming/xodus) to download the game from Microsoft's Store infrastructure under your own licence.
 
 ### Features
 
@@ -254,7 +255,7 @@ This method uses the Windows version of Minecraft Bedrock and requires a Microso
 - Integrates Wine setup into the launcher.
 - Supports Microsoft account sign-in.
 - Provides access to the Flarial Client.
-- Downloads and manages supported Minecraft versions through the launcher.
+- Downloads and manages supported Minecraft versions through the launcher using [`xodus-cli`](https://github.com/xodus-gaming/xodus), part of the Xodus project, for game downloads and Microsoft licence handling.
 - Opens the Flarial menu in-game using the `K` key.
 
 ### Requirements
@@ -314,8 +315,6 @@ A desktop launcher that uses Xodus to install and run the **Windows version of M
 ---
 
 # Method 10: GDK Version via ProtonGDK
-
-The methods mentioned above (BedrockOnLinux and Flarial Client) are understood to use this approach behind the scenes.
 
 Minecraft Bedrock on Windows has transitioned from UWP to GDK.
 
